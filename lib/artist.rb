@@ -21,9 +21,7 @@ class Artist
   end 
   
   def genres 
-    self.songs.select do |song|
-    song.genre 
-    end 
+   self.songs.select {|song| song.genre}
   end 
   
   
